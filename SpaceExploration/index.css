@@ -1,10 +1,15 @@
 body {
+  color:  #82a5ca;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+}
+
+.hero {
   background-image: url("images/galaxy.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
-  text-align: center;
-  font-family: 'Orbitron', sans-serif;
+  padding: 10px 0 40px 0;
 }
 
 .btn {
@@ -13,6 +18,7 @@ body {
   font-weight: bold;
   background-color: white;
   font-family: inherit;
+  color:  #82a5ca;
 }
 
 .underline {
