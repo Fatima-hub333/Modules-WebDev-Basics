@@ -2,6 +2,11 @@ body {
   margin: 20px;
 }
 
+.card {
+  border: 1px dashed blue;
+  padding: 20px;
+}
+
 .avatar {
   width: 150px;
 }
