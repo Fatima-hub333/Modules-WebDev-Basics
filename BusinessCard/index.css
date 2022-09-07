@@ -5,6 +5,7 @@ body {
 .card {
   border: 1px dashed blue;
   padding: 20px;
+  display: flex;
 }
 
 .avatar {
