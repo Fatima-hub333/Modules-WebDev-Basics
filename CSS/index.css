@@ -1,6 +1,5 @@
 .main {
-  margin-top: 100px;
-  text-align: center;
+  margin-top: 200px;
 }
 
 .logo-img{
@@ -22,6 +21,12 @@
   line-height: 24px;
 }
 
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
 .btn {
   margin-top: 30px;
   border: none;
@@ -30,3 +35,4 @@
   border-radius: 4px;
   font-size: 14px;
 }
+
