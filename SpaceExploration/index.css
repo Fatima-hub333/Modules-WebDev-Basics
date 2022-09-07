@@ -3,4 +3,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  font-weight: bold;
+  background-color: white;
+  font-family: inherit
 }
