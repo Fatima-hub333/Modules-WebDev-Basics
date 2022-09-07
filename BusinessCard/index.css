@@ -10,6 +10,10 @@ body {
   margin-right: auto;
   justify-content: space-around;
   text-align: center;
+  color: #2b2839;
+  background-color: #ddebf8;
+  border-bottom: 8px solid #d8cefe ;
+
 }
 
 .avatar {
