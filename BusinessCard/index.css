@@ -1,5 +1,6 @@
 body {
   margin: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card {
@@ -12,8 +13,7 @@ body {
   text-align: center;
   color: #2b2839;
   background-color: #ddebf8;
-  border-bottom: 8px solid #d8cefe ;
-
+  border-bottom: 8px solid #d8cefe;
 }
 
 .avatar {
@@ -22,4 +22,8 @@ body {
 
 .border-blue {
   border: 1px dashed blue;
+}
+
+p {
+  font-size: 12px;
 }
