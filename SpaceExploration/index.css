@@ -12,5 +12,9 @@ body {
   border: none;
   font-weight: bold;
   background-color: white;
-  font-family: inherit
+  font-family: inherit;
+}
+
+.underline {
+  border-bottom: 4px solid white;
 }
