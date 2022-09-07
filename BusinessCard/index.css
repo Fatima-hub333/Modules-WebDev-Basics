@@ -4,19 +4,19 @@ body {
 }
 
 .card {
-  width: 400px;
+  width: 500px;
   padding: 20px;
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
   text-align: center;
   color: #2b2839;
-  background-color: #ddebf8;
-  border-bottom: 8px solid #d8cefe;
+  background-color: #cdb4db;
+  border-bottom: 8px solid #bde0fe;
 }
 
 .avatar {
-  width: 150px;
+  width: 200px;
 }
 
 .border-blue {
@@ -25,4 +25,8 @@ body {
 
 p {
   font-size: 12px;
+}
+
+h3 {
+  letter-spacing: 4px;
 }
