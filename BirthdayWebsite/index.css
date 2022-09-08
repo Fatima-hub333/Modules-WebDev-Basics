@@ -94,3 +94,7 @@ h1, h2, h3, h4, p {
   border: 6px solid white;
   border-radius: 10px;
 }
+
+.gift-img:hover {
+  background-image: url('images/happy.gif');
+}
