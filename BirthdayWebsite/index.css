@@ -7,9 +7,14 @@
 
 /* Set core body defaults */
 body {
+  background: linear-gradient(#a2d2ff, #EFB0C9);
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'Happy Monkey', cursive;
+  text-align: center;
+  background-color: #a2d2ff;
+  color: #ffffff;
 }
 
 /* Make images easier to work with */
@@ -32,14 +37,6 @@ img {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-body {
-  font-family: 'Happy Monkey', cursive;
-  text-align: center;
-  background-color: #a2d2ff;
-  color: #ffffff;
-  
 }
 
 .header {
