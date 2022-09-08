@@ -95,6 +95,10 @@ h1, h2, h3, h4, p {
   border-radius: 10px;
 }
 
-.gift-img:hover {
+#gift-img-happy:hover {
   background-image: url('images/happy.gif');
+}
+
+#gift-img-hot:hover {
+  background-image: url('images/hot.gif');
 }
