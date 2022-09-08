@@ -5,20 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -51,10 +37,13 @@ img {
 body {
   font-family: 'Happy Monkey', cursive;
   text-align: center;
+  background-color: #a2d2ff;
+  color: #ffffff;
 }
 
 #birthday-person-img {
   margin: 0 auto;
   width: 150px;
   border-radius: 50%;
+  border: 6px solid #EFB0C9;
 }
