@@ -118,3 +118,12 @@ h1, h2, h3, h4, p {
 #gift-img-cheers:hover {
   background-image: url('images/cheers.gif');
 }
+
+#footer {
+  font-style: italic;
+  width: 400px;
+  margin: 40px  auto 20px ;
+}
+#footer a {
+  color: white;
+}
