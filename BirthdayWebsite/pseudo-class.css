@@ -1,0 +1,13 @@
+div {
+  text-align: center;
+  background-color: #e5383b;
+  font-size: 30px;
+  color: white;
+  padding: 25px 0;
+  margin: 5px;
+  font-weight: bold;
+}
+
+div:hover {
+  background-image: url('images/nosheen.jpg');
+}
