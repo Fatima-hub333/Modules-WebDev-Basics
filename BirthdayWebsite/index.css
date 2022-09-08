@@ -42,7 +42,7 @@ body {
   
 }
 
-.container {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,6 +59,16 @@ h1, h2, h4, p {
   border: 6px solid #EFB0C9;
 }
 
-h2, h4 {
+#bday-age {
   background: #EFB0C9;
+  margin: 25px 0 10px 0;
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+
+#bday-date {
+  margin: 0;
+  background: #EFB0C9;
+  padding: 2px 8px;
+  border-radius: 5px;
 }
