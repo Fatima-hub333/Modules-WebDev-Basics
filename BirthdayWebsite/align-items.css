@@ -1,9 +1,10 @@
 .container {
   border: 8px solid #016a26;
-  height: 260px;
+  height: 360px;
   display: flex;
-  justify-content: space-around;
-  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 
 .item {
