@@ -1,13 +1,10 @@
 // document.getElementById('count-el').innerHTML = 5
 
-let lapsCompleted = 0
-function incrementLap() {
-  lapsCompleted = lapsCompleted + 1
+// change the count-el in the HTML to reflect the new count
+let countEl = document.getElementById('count-el')
+let count = 0
+function increment() {
+  count = count + 1
+  countEl.innerText = count
 }
-
-incrementLap()
-incrementLap()
-incrementLap()
-
-console.log(lapsCompleted)
-
+increment()
