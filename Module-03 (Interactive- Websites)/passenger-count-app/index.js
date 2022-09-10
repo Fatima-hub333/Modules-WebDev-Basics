@@ -1,10 +1,15 @@
-// document.getElementById('count-el').innerHTML = 5
-
-// change the count-el in the HTML to reflect the new count
-let countEl = document.getElementById('count-el')
+let saveEl = document.getElementById("save-el")
+let countEl = document.getElementById("count-el")
 let count = 0
+
 function increment() {
-  count = count + 1
-  countEl.innerText = count
+  count += 1
+  countEl.textContent = count
 }
-increment()
+
+function save() {
+  let countStr = count + " - "
+  saveEl.textContent += countStr
+  countEl.textContent = 0
+  count = 0
+}
