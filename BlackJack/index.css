@@ -31,6 +31,8 @@ main {
   text-align: center;
   font-size: 25px;
   color: #98c1d9;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 button {
