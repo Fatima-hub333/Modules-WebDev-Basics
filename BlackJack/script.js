@@ -7,8 +7,13 @@ let sum = 0
 let hasblackJack = false
 let isAlive = false
 let message = ''
+let player = {
+  name: "Fatima",
+  chips: 145
+}
 
-console.log(cards)
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
   let randomNumer = Math.floor( Math.random()*13 ) + 1
