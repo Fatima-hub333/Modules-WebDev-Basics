@@ -50,8 +50,10 @@ messageEl.textContent = message
 }
 
 function newCard() {
-  let card = getRandomCard()
-  sum += card
-  cards.push(card)
-  renderGame()
+  if (isAlive === true && hasblackJack === false) {
+    let card = getRandomCard()
+    sum += card
+    cards.push(card)
+    renderGame()
+  }
 }
