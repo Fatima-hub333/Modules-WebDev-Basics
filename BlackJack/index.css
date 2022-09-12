@@ -32,3 +32,11 @@ main {
   font-size: 25px;
   color: #98c1d9;
 }
+
+button {
+  background-color: #ee6c4d;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}

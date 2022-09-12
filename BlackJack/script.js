@@ -1,3 +1,4 @@
+let messageEl = document.getElementById('message-el')
 let firstCard = 10
 let secondCard = 11
 let sum = firstCard + secondCard
@@ -5,7 +6,9 @@ let hasblackJack = false
 let isAlive = true
 let message = ''
 
-let messageEl = document.getElementById('message-el')
+function startGame() {
+  console.log("Start button clicked")
+}
 
 if (sum <= 20) {
   message = "Do you want to draw a new card? 🙂"
