@@ -46,13 +46,27 @@
 // messages.pop()
 // console.log(messages)
 
-let hasCompletedCourse = true
-let givesCertificate = true
+// let hasCompletedCourse = true
+// let givesCertificate = true
 
-if (hasCompletedCourse === true && givesCertificate === true) {
-  generateCertificate()
+// if (hasCompletedCourse === false && givesCertificate === false) {
+//   showSolution()
+// }
+
+// function showSolution() {
+//   console.log("Showing the solution.........")
+// }
+let likesDocumentaries = true
+let likesStartups = false
+
+if (likesDocumentaries === true || likesStartups === true) {
+  recommendMovie()
 }
 
-function generateCertificate() {
-  console.log("Generating certificate...")
+function recommendMovie() {
+  console.log("Hey, check out this new film we think you will like!")
 }
+
+// function generateCertificate() {
+//   console.log("Generating certificate...")
+// }
