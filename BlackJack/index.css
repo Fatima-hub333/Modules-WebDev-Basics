@@ -16,7 +16,7 @@ body {
 .container {
   margin-left: 65%;
   margin-top: 50px;
-  margin-top: 20%;
+  margin-top: 13%;
 }
 
 header {
@@ -54,4 +54,8 @@ button {
 
 #cards-el {
   color: #f7fff7;
+}
+
+#player-el {
+  margin-top: 15px;
 }
