@@ -11,7 +11,16 @@ let isAlive = true
 let message = ''
 
 function getRandomCard() {
-  return Math.floor(Math.random()* 13) + 1
+  // if 1     -> return 11
+  // if 11-13 -> return 10
+  let randomNumer = Math.floor( Math.random()*13 ) + 1
+  if (randomNumer > 10) {
+    return 10
+  } else if (randomNumer === 1) {
+    return 11
+  } else {
+    return randomNumer
+  }
 }
 
 function startGame() {
@@ -19,8 +28,9 @@ function startGame() {
 }
 
 function renderGame() {
-  for (let i = 0; i < cards.length; i += 1) {
-    cardsEl.textContent = "Cards: " + cards + "  "
+  cardsEl.textContent = "Cards: "
+  for (let i = 0; i < cards.length; i++) {
+    cardsEl.textContent += cards[i] + " "
   }
 
   sumEl.textContent = "Sum: " + sum
