@@ -12,10 +12,11 @@ body {
 }
 
 .container {
-  width: 330px;
+  width: 350px;
   background-color: #ECFDF5;
   margin: 50px auto;
   padding: 20px;
+  border-radius: 10px;
 }
 
 #h1-subcontent {
@@ -38,4 +39,21 @@ main p {
 
 hr {
   margin-top: 40px;
+}
+
+#passwords {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.generatedPassword {
+  width: 150px;
+  background-color: #1C1C1C;
+  height: 40px;
+  border-radius: 8px;
+  color: #10B981;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }

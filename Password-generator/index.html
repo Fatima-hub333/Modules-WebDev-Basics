@@ -14,15 +14,20 @@
 <body>
   <div class="container">
     <header>
-      <h1>Generate a <span id="h1-subcontent">Random Password</span></h1>
+      <h1>Generate a <br> <span id="h1-subcontent">Random Password</span></h1>
     </header>
     <main>
       <p>Never use an insecure password again.</p>
-      <button class="btn">Generate Password</button>
+      <button class="btn" onclick="getGeneratePasswords()">Generate Password</button>
       <hr>
       <div id="passwords">
-        <button></button>
-        <button></button>
+        <div class="generatedPassword" id="password1-el"></div>
+        <div class="generatedPassword" id="password2-el"></div>
+      </div>
+      <div id="passwords">
+        <div class="generatedPassword" id="password3-el"></div>
+        <div class="generatedPassword" id="password4-el"></div>
+      </div>
       </div>
     </main>
   </div>
