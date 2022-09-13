@@ -12,7 +12,7 @@ inputBtn.addEventListener("click", function () {
 function renderLeads() {
   let lisItems = ''
 for (let i = 0; i < myLeads.length; i += 1) {
-  lisItems += "<li>" + myLeads[i] + "</li>"
+  lisItems += "<li><a target '_blank' href='#''>" + myLeads[i] + "</a></li>"
 }
 olEl.innerHTML = lisItems
 }
