@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -13,4 +13,26 @@ html, body {
   margin: 20px auto;
   color: white;
   font-weight: bold;
+} */
+
+body {
+    text-align: center;
+}
+
+#container {
+    margin-top: 30px;
+}
+
+p {
+    color: lightcoral;
+    font-weight: bold;
+}
+
+#container button {
+    background: lightcoral;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
