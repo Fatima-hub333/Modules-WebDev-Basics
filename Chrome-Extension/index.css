@@ -20,12 +20,22 @@ input {
   padding: 10px;
 }
 
-button {
+#input-btn {
   background-color: #5f9341;
   padding: 10px 20px;
   border: none;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+button {
+  background: transparent;
+  padding: 8px 20px;
+  border: 2px solid #5f9341;
+  font-size: 15px;
+  color: #5f9341;
   font-weight: bold;
   margin-bottom: 20px;
 }
