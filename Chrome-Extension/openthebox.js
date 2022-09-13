@@ -15,10 +15,19 @@
   
 // console.log("Total cost: " + fullprice + ". it will arrive in " + shippingTime)
 
-const container = document.getElementById("container")
+// const container = document.getElementById("container")
 
-container.innerHTML = "<button onclick='buy()'> Button!</button>"
+// container.innerHTML = "<button onclick='buy()'> Button!</button>"
 
-function buy() {
-  container.innerHTML += "<p>Thank You for buying!</p>"
-}
+// function buy() {
+//   container.innerHTML += "<p>Thank You for buying!</p>"
+// }
+
+// template strings/literals
+const recipient = "James"
+const sender = "Fatima"
+// const email = "Hey " + recipient + "! How is it going? Cheers Fatima"
+const email = `Hey ${recipient}!
+How is it going?
+Cheers ${sender}`
+console.log(email)
