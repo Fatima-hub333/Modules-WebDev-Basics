@@ -5,3 +5,25 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+}
+
+input {
+  background-color: white;
+  display: block;
+  width: 100%;
+  border: 1px solid #5f9341;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+button {
+  background-color: #5f9341;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
