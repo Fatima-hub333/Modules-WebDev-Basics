@@ -9,5 +9,10 @@ inputBtn.addEventListener("click", function () {
 })
 
 for (let i = 0; i < myLeads.length; i += 1) {
-  olEl.innerHTML += "<li>" + myLeads[i] + " " + "</li>"
+  // create element
+  const li = document.createElement("li")
+  // set text content
+  li.textContent = myLeads[i]
+  // append to ol 
+  olEl.append(li)
 }
