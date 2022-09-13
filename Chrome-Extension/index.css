@@ -26,4 +26,11 @@ button {
   border: none;
   color: white;
   font-weight: bold;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-left: 15px;
+  padding-top: 10px;
+  font-size: 18px;
 }
