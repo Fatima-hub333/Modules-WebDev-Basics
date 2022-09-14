@@ -15,7 +15,7 @@
   font-weight: bold;
 } */
 
-body {
+/* body {
     text-align: center;
 }
 
@@ -35,4 +35,59 @@ p {
     font-size: 20px;
     font-weight: bold;
     color: white;
+} */
+
+/* body {
+  text-align: center;
+  background: whitesmoke;
+  color: darkgreen;
+  padding: 20px 0;
 }
+
+button {
+  background: lightcoral;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+} */
+/* 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: whitesmoke;
+  text-align: center;
+  color: #130e0f;
+}
+
+h1 {
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+#container {
+  width: 100%;
+}
+
+.team-img {
+  width: 100px;
+  border-radius: 100%;
+  margin: 10px;
+} */
+
+html, body {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  border: none;
+  border-radius: 200px;
+  padding: 15px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #fc807f;
+  color: white;
+}
+
