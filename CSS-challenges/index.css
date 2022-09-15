@@ -1,7 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 21px;
+}
+
+header img {
+  border: 6px solid white;
+  margin-top: 20px;
+  border-radius: 50%;
 }
 
 .container {
@@ -52,4 +66,20 @@ a:active {
 
 .small-text {
   font-size: 16px;
+}
+
+.spacing {
+  padding: 100px 0;
+}
+
+header {
+  background-color: #D7D7D7;
+}
+
+.intro {
+  background-color: #FFEAEA;
+}
+
+.content {
+  background-color: #EAF9FF;
 }
