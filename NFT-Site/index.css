@@ -44,6 +44,11 @@ section {
 padding: 45px 0;
 }
 
+.container {
+  width: 620px;
+  margin: 0 auto;
+}
+
 .main-image {
   width: 100%;
 }
