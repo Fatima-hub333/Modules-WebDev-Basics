@@ -47,6 +47,21 @@ section {
 padding: 45px 0;
 }
 
+.section-two {
+  color: whitesmoke;
+  background-color: #5f29a3;
+}
+
+.feature-img {
+  width: 300px;
+  border-radius: 4.6px;
+}
+
+.section-two-image-container {
+  display: flex;
+  justify-content: space-between
+}
+
 .container {
   width: 620px;
   margin: 0 auto;
