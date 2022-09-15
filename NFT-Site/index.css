@@ -27,6 +27,19 @@ h3 {
   color: #d0aaff;
 }
 
+a {
+  color: #ef5839;
+  text-decoration: underline dotted;
+}
+
+a:hover {
+  color: #d4b44c
+}
+
+a:active {
+  color: #d4b44c
+}
+
 section {
 padding: 45px 0;
 }
@@ -34,5 +47,8 @@ padding: 45px 0;
 .main-image {
   width: 100%;
 }
+
+
+
 
 
