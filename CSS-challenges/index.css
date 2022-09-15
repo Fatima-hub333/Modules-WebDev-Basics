@@ -31,10 +31,12 @@ h2 {
 
 h1 {
   font-size: 60px;
+  margin-top: 0;
 }
 
 h2 {
   font-size: 42px;
+  margin-top: 0;
 }
 
 h3 {
@@ -54,6 +56,7 @@ a:focus {
 
 .small-text {
   font-size: 16px;
+  margin-top: 5px;
 } 
 
 header,
@@ -64,4 +67,8 @@ section {
 .inverse {
   color: #fff;
   background: #252525;
+}
+
+.margin-btm {
+  margin-bottom: 0;
 }
