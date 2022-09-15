@@ -12,11 +12,7 @@ body {
   color: #2b2834;
 }
 
-header {
-  background-color: #5f29a3;
-  padding: 45px 0;
-}
-
+/* Typography */
 h1 {
   font-size: 36px;
   color: whitesmoke;
@@ -27,6 +23,7 @@ h3 {
   color: #d0aaff;
 }
 
+/* links */
 a {
   color: #ef5839;
   text-decoration: underline dotted;
@@ -38,6 +35,12 @@ a:hover {
 
 a:active {
   color: #d4b44c
+}
+
+/* Layout */
+header {
+  background-color: #5f29a3;
+  padding: 45px 0;
 }
 
 section {
