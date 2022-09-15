@@ -12,4 +12,19 @@ body {
   color: #2b2834;
 }
 
+header {
+  background-color: #5f29a3;
+  padding: 45px 0;
+}
+
+h1 {
+  font-size: 36px;
+  color: whitesmoke;
+}
+
+h3 {
+  font-size: 20px;
+  color: #d0aaff;
+}
+
 
