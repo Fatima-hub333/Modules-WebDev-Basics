@@ -22,6 +22,10 @@ h3 {
   color: #d0aaff;
 }
 
+p {
+  line-height: 23px;
+}
+
 /* links */
 a {
   color: #ef5839;
@@ -58,6 +62,11 @@ h1,
 .section-two-image-container {
   display: flex;
   justify-content: space-between
+}
+
+.section-two p {
+  line-height: 23px;
+  margin-top: 20px;
 }
 
 .container {
