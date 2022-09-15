@@ -72,3 +72,18 @@ section {
 .margin-btm {
   margin-bottom: 0;
 }
+
+.btn {
+  background-color: #99D930;
+  color: #252525;
+  text-decoration: none;
+  padding: 10px 25px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #252525;
+  color: #fff;
+}
