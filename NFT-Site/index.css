@@ -15,7 +15,6 @@ body {
 /* Typography */
 h1 {
   font-size: 36px;
-  color: whitesmoke;
 }
 
 h3 {
@@ -29,27 +28,26 @@ a {
   text-decoration: underline dotted;
 }
 
-a:hover {
-  color: #d4b44c
-}
-
+a:hover,
 a:active {
   color: #d4b44c
 }
 
 /* Layout */
-header {
-  background-color: #5f29a3;
+header,
+section,
+footer {
   padding: 45px 0;
 }
 
-section {
-padding: 45px 0;
+header,
+.section-two {
+  background-color: #5f29a3;
 }
 
+h1,
 .section-two {
   color: whitesmoke;
-  background-color: #5f29a3;
 }
 
 .feature-img {
@@ -72,11 +70,6 @@ padding: 45px 0;
 }
 
 footer {
-  padding: 55px 0;
   text-align: center;
   color: #5f29a3;
 }
-
-
-
-
