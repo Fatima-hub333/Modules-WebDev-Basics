@@ -1,21 +1,9 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 21px;
-}
-
-header img {
-  border: 6px solid white;
-  margin-top: 20px;
-  border-radius: 50%;
+  font-weight: 300;
+  margin: 0;
 }
 
 .container {
@@ -33,12 +21,12 @@ h1 .bold-text {
 }
 
 h2 .bold-text {
-  font-size: 60;
+  font-size: 60px;
 }
 
 h1,
 h2 {
-  font-weight: 300;
+  font-weight: 300; 
 }
 
 h1 {
@@ -60,26 +48,20 @@ a {
 }
 
 a:hover,
-a:active {
+a:focus {
   color: #131313;
 }
 
 .small-text {
   font-size: 16px;
-}
+} 
 
-.spacing {
+header,
+section {
   padding: 100px 0;
 }
 
-header {
-  background-color: #D7D7D7;
-}
-
-.intro {
-  background-color: #FFEAEA;
-}
-
-.content {
-  background-color: #EAF9FF;
+.inverse {
+  color: #fff;
+  background: #252525;
 }
