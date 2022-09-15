@@ -11,19 +11,6 @@ body {
   margin: 0 auto;
 }
 
-.bold-text {
-  font-weight: 900;
-  display: block;
-}
-
-h1 .bold-text {
-  font-size: 80px;
-}
-
-h2 .bold-text {
-  font-size: 60px;
-}
-
 h1,
 h2 {
   font-weight: 300; 
@@ -39,13 +26,38 @@ h2 {
   margin-top: 0;
   border-top: solid 1px #c4c4c4;
   border-bottom: solid 1px #c4c4c4;
-  padding: 25px 0;
+  
+  padding: 20px 0;
   margin-bottom: 20px;
 }
 
 h3 {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 0;
+}
+
+.accent-text {
+  display: block;
+}
+
+h1 .accent-text {
+  font-size: 80px;
+}
+
+h2 .accent-text {
+  font-size: 60px;
+}
+
+.accent-text,
+.name,
+time {
+  font-weight: 900;
+  color: #99D930;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 a {
@@ -73,21 +85,23 @@ section {
   background: #252525;
 }
 
-.margin-btm {
-  margin-bottom: 0;
+.inverse .btn:hover,
+.inverse .btn:focus {
+  background-color: yellow;
+  color: #252525;
 }
 
 .btn {
-  background-color: #99D930;
+  display: inline-block;
   color: #252525;
   text-decoration: none;
+  background: #99D930;
   padding: 10px 25px;
-  display: inline-block;
-  border-radius: 5px;
+  margin-top: 25px;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: #252525;
+  background: #252525;
   color: #fff;
 }
