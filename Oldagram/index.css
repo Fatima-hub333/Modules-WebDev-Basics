@@ -31,7 +31,7 @@ body {
 /* Layout */
 .container {
   width: 500px;
-  margin: 10px auto 50px auto;
+  margin: 0 auto 50px auto;
   background-color: #fff;
   padding-bottom: 10px;
 }
