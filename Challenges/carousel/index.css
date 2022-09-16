@@ -62,3 +62,7 @@ the edges of the slides, but adequately spaced
 .carousel .carousel-actions button#carousel-button-next {
   margin-right: 20px;   
 }
+
+.carousel-item-hidden {
+  display: none;
+}
