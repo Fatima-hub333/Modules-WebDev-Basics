@@ -6,11 +6,14 @@ document.getElementById('carousel-button-next').addEventListener('click', moveTo
 document.getElementById('carousel-button-prev').addEventListener('click', moveToPrevSlide)
 
 function moveToNextSlide() {
-  console.log('moving to next slide')
+  if (slidePosition === totalSliedes -1) {
+    slidePosition = 0
+  } else {
+    slidePosition++
+  }
+
+  slides[slidePosition].classList.add("carousel-item-visible")
 }
 
 function moveToPrevSlide() {
-  console.log('moving to prev slide')
 }
-
-console.log(totalSliedes)
