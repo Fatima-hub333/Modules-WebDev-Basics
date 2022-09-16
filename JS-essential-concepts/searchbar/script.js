@@ -5,6 +5,10 @@ searchInput.addEventListener('keyup', () => {
   
   for (let counter = 0; counter < allNamesDOMCollection.length; counter ++) {
     const currentName = allNamesDOMCollection[counter].textContent.toLocaleLowerCase()
-    console.log(currentName)
+    if (currentName.includes(searchQuery)) {
+      allNamesDOMCollection[counter].style.display = "block"
+    } else {
+      allNamesDOMCollection[counter].style.display = "none"
+    }
   }
 })
