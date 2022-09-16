@@ -1,5 +1,5 @@
-let usernameInput = document.getElementById("usernameInput")
-usernameInput.addEventListener("keyup", () => {
-  let username = event.target.value.toLowerCase()
-  console.log(username)
+let searchInput = document.getElementById("searchInput")
+searchInput.addEventListener('keyup', () => {
+  let searchQuery = event.target.value.toLowerCase()
+  console.log(searchQuery)
 })
