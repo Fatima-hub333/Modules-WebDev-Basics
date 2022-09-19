@@ -13,3 +13,5 @@ There are difeerent types of units that we can use. CSS units come in a few diff
 - Relative to font-size;
 - em and rem 
 - Relative to the viewport; vw, vh, vmin, vmax
+
+Percentages: 
