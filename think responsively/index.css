@@ -59,3 +59,14 @@ img {
   padding: 1em;
   color: #fff;
 }
+
+@media (max-width: 600px) {
+  .columns {
+    flex-direction: column;
+  }
+  
+  .col {
+    width: 100%;
+  }
+}
+
