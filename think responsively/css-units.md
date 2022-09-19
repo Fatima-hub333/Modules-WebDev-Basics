@@ -15,3 +15,5 @@ There are difeerent types of units that we can use. CSS units come in a few diff
 - Relative to the viewport; vw, vh, vmin, vmax
 
 Percentages: 
+
+The REM unit is used for Root Em. That means it's always relative to the root of our document. The root of an HTML page is always the HTML element.
