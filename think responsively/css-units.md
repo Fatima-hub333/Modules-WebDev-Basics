@@ -6,3 +6,10 @@ There are difeerent types of units that we can use. CSS units come in a few diff
 1- Absolute units are the easiest to understand:
 - Pixels (px)
 - pt, cm, mm, in, etc
+
+2- Percetage: are mainly used for widths and pretty easy to understand. It's relative to their parent except for height.
+
+3- Relative: There are two different types of relative units;
+- Relative to font-size;
+- em and rem 
+- Relative to the viewport; vw, vh, vmin, vmax
