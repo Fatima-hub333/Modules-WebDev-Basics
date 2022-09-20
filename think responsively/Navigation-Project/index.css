@@ -78,20 +78,28 @@ Layout
 
 .container-flex {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 header {
   background-color: #f8f8f8;
   padding: 2em 0;
+  text-align: center;
 }
 
-main {
+@media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
+  }
+
+  main {
   width: 75%;
-}
+  }
 
-aside {
+  aside {
   width: 20%;
+  }
 }
 
 /* ================
@@ -127,12 +135,6 @@ nav a:focus {
 }
 
 @media (max-width: 675px) {
-  .container-flex {
-    flex-direction: column;
-  }
-  header {
-    text-align: center;
-  }
   nav ul {
     flex-direction: column;
   }
