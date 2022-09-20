@@ -2,12 +2,6 @@ html {
   font-size: .9rem;
 }
 
-@media (min-width: 600px) {
-  html {
-    font-size: 1.3125rem;
-  }
-}
-
 body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -119,4 +113,34 @@ section {
 .btn:focus {
   background: #252525;
   color: #fff;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 1.3125rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .splitter {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .articles.inverse {
+    background-color: #99D930;
+    color: #252525;
+  }
+
+  .articles.inverse .accent-text,
+  .articles.inverse .name,
+  .articles.inverse time,
+  .articles.inverse a {
+    color: currentColor;
+  }
+
+  .articles.inverse a:hover,
+  .articles.inverse a:focus {
+    color: #fff;
+  }
 }
