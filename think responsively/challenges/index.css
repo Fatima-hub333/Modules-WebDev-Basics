@@ -1,14 +1,25 @@
+html {
+  font-size: .9rem;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 1.3125rem;
+  }
+}
+
 body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3125rem;
   font-weight: 300;
   margin: 0;
 }
 
 .container {
+  /* width: 90%; */
   max-width: 570px;
   margin: 0 auto;
+  padding: 0 2em;
 }
 
 h1,
@@ -74,6 +85,10 @@ a:focus {
   font-size: 1rem;
   margin-top: .3125em;
 } 
+
+img {
+  max-width: 100%;
+}
 
 header,
 section {
