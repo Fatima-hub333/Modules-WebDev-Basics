@@ -143,4 +143,17 @@ section {
   .articles.inverse a:focus {
     color: #fff;
   }
+
+  .articles.inverse .btn {
+    color: #fff;
+    background-color: #252525;
+  }
+  .articles.inverse .btn:hover {
+    color: #252525;
+    background-color: #fff;
+  }
+
+  .articles.inverse h2 {
+    border-color: currentColor;
+  }
 }
