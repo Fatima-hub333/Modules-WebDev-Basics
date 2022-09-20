@@ -10,6 +10,12 @@ max-width: 100%;
 display: block;
 }
 
+.image-full {
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
 /* =================
 Typography
 ================= */
@@ -26,6 +32,10 @@ margin-top: 0;
 h1 {
 font-size: 2rem;
 margin: 0;
+}
+
+h3 {
+  color: #1792d2;
 }
 
 a {
@@ -85,6 +95,9 @@ margin: 2em 0;
   text-align: center;
 }
 
+.widget-recent-post-title {
+  color: #143774;
+}
 
 /* =================
 Layout
@@ -114,7 +127,6 @@ footer {
   color: white;
   text-align: center;
   font-weight: 300;
-  /* font-size: .75em; */
   padding: 3em 0;
 }
 
