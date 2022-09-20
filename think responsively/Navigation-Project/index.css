@@ -66,6 +66,10 @@ strong {
   text-decoration: underline;
 }
 
+.article-info {
+  margin: 2em 0;
+}
+
 /* =================
 Layout
 ==================== */
@@ -132,6 +136,13 @@ nav a:focus {
 .current-page {
   border-bottom: 1px solid #707070;
   color: #707070;
+}
+
+/* Articles */
+.article-featured {
+  border-bottom: #707070 1px solid;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 @media (max-width: 675px) {
