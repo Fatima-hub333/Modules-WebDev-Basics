@@ -165,4 +165,22 @@ html {
 .articles.inverse h2 {
   border-color: currentColor;
 }
+
+.portfolio {
+  background-color: #252525;
+  color: #fff;
+}
+
+.portfolio .container {
+  max-width: 1200px;
+}
+
+.work {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-item {
+  width: 28%;
+}
 }
