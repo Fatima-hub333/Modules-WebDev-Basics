@@ -1,0 +1,107 @@
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.container {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-weight: 300; 
+}
+
+h1 {
+  font-size: 3.75rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2.625rem;
+  margin-top: 0;
+  border-top: solid 1px #c4c4c4;
+  border-bottom: solid 1px #c4c4c4;
+  
+  padding: .5em 0;
+  margin-bottom: .5em;
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.accent-text {
+  display: block;
+}
+
+h1 .accent-text {
+  font-size: 5rem;
+}
+
+h2 .accent-text {
+  font-size: 3.75rem;
+}
+
+.accent-text,
+.name,
+time {
+  font-weight: 900;
+  color: #99D930;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  color: #99D930;
+  font-weight: 900;
+}
+
+a:hover,
+a:focus {
+  color: #131313;
+}
+
+.small-text {
+  font-size: 1rem;
+  margin-top: .3125em;
+} 
+
+header,
+section {
+  padding: 6.25em 0;
+}
+
+.inverse {
+  color: #fff;
+  background: #252525;
+}
+
+.inverse .btn:hover,
+.inverse .btn:focus {
+  background: #fff;
+  color: #252525;
+}
+
+.btn {
+  display: inline-block;
+  color: #252525;
+  text-decoration: none;
+  background: #99D930;
+  padding: .625em 1.5625em;
+  margin-top: 1.5625em;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #252525;
+  color: #fff;
+}
