@@ -68,10 +68,6 @@ background-size: cover;
 background-color: #404040;
 background-position: center;
 padding: 0 .5em 2em;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-min-height: 50vh;
 }
 
 
@@ -83,10 +79,16 @@ main-content section
 padding: 2em 1em;
 }
 
-.intro > *,
-.main-content > * {
+.container {
   max-width: 400px;
   margin: 0 auto;
+}
+
+.container-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
 }
 /* =================
 media queries 
@@ -117,5 +119,9 @@ h1 + p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.container-intro {
+  height: 100%;
 }
 }
