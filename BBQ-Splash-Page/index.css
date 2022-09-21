@@ -69,9 +69,10 @@ Intro section
 ================= */
 
 .intro {
-background-image: url(images/dark-ribs.jpg);
+background-image: url(images/ribs.jpg), linear-gradient(45deg,red, blue);
+/* background-color: #404040; */
+background-blend-mode: multiply;
 background-size: cover;
-background-color: #404040;
 background-position: center;
 padding: 0 .5em 2em;
 display: flex;
