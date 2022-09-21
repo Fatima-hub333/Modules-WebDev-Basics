@@ -116,6 +116,21 @@ input {
   border-radius: 7px;
 }
 
+.btn {
+  display: inline-block;
+  padding: 1em 1.5em;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(to left, #ff713b, #ffa51d);
+  color: white;
+}
 /* =================
 media queries 
 ================= */
