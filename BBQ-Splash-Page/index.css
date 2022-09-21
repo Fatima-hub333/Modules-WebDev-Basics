@@ -90,6 +90,32 @@ padding: 2em 1em;
   justify-content: space-between;
   min-height: 50vh;
 }
+
+/* =================
+Form
+================= */
+
+.email-collector {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 300px;
+}
+
+input,
+.btn {
+  width: 100%;
+  border-radius: 5px;
+}
+
+input {
+  font-family: inherit;
+  text-align: inherit;
+  margin-bottom: .75em;
+  padding: .25em;
+  border: 1px solid #404040;
+  border-radius: 7px;
+}
+
 /* =================
 media queries 
 ================= */
