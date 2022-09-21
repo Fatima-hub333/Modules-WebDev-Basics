@@ -1,5 +1,7 @@
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
@@ -48,6 +50,10 @@ color: #F18119;
 font-weight: 900;
 text-transform: uppercase;
 order: -1;
+border-top: 5px solid #F18119;
+margin: 0;
+padding-top: 2px;
+border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
 
 .fine-print {
@@ -68,6 +74,10 @@ background-size: cover;
 background-color: #404040;
 background-position: center;
 padding: 0 .5em 2em;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+min-height: 50vh;
 }
 
 
@@ -79,71 +89,68 @@ main-content section
 padding: 2em 1em;
 }
 
-.container {
-  max-width: 400px;
-  margin: 0 auto;
+
+
+.intro > *,
+.main-content > * {
+max-width: 400px;
+margin-left: auto;
+margin-right: auto;
 }
 
-.container-intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 50vh;
-}
 
 /* =================
-Form
+form
 ================= */
 
 .email-collector {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 300px;
+width: 80%;
+max-width: 300px;
 }
 
 input,
 .btn {
-  width: 100%;
-  border-radius: 5px;
+width: 100%;
+border-radius: 5px;
 }
 
 input {
-  font-family: inherit;
-  text-align: inherit;
-  margin-bottom: .75em;
-  padding: .5em;
-  border: 1px solid #404040;
-  border-radius: 7px;
-  transform: scale(1);
-  transition: transform 250ms;
+font-family: inherit;
+text-align: inherit;
+margin-bottom: .75em;
+padding: .25em;
+border: 1px solid #404040;
+transform: scale(1);
+transition: transform 250ms;
 }
 
 input:focus {
-  transform: scale(1.1);
+transform: scale(1.1);
 }
 
 .btn {
-  display: inline-block;
-  padding: 1em 1.5em;
-  font-size: 0.625rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 1px;
-  border: 0;
-  cursor: pointer;
+display: inline-block;
+padding: 1em 1.5em;
+font-size: 0.625rem;
+text-transform: uppercase;
+font-weight: 900;
+letter-spacing: 1px;
+border: 0;
+cursor: pointer;
 }
 
 .btn-primary {
-  background: linear-gradient(to left, #ff713b, #ffa51d);
-  color: white;
-  transform: scale(1);
-  transition: transform 250ms;
+background-image: linear-gradient(to left, #FF713B, #FFA51D);
+color: white;
+transform: scale(1);
+transition: transform 250ms;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  transform: scale(1.1);
+transform: scale(1.1);
 }
+
 /* =================
 media queries 
 ================= */
@@ -173,9 +180,5 @@ h1 + p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.container-intro {
-  height: 100%;
 }
 }
