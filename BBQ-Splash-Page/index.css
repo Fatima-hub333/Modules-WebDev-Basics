@@ -83,7 +83,11 @@ main-content section
 padding: 2em 1em;
 }
 
-
+.intro > *,
+.main-content > * {
+  max-width: 400px;
+  margin: 0 auto;
+}
 /* =================
 media queries 
 ================= */
