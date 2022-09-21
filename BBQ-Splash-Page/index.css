@@ -106,4 +106,10 @@ h1 + p {
   width: 50%;
   min-height: 100vh;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 }
