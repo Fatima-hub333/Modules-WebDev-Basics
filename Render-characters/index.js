@@ -45,3 +45,19 @@ function renderCharacter(data) {
 
 renderCharacter(hero)
 renderCharacter (monster)
+
+function getLottoNumbers() {
+  const winningNumbers = []
+  for (let i = 0; i < 6; i++){
+    winningNumbers.push(Math.floor(Math.random() *100))
+  }
+  return winningNumbers
+}
+
+function getWinningNumbersHtml(num) {
+  return getLottoNumbers().map(function () {
+    return `<div class="number">${num}</div>`
+  }).join('')
+}
+
+document.getElementById('winning').innerHTML = getWinningNumbersHtml()
