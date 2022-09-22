@@ -1,3 +1,12 @@
+function getDiceRollArray(diceCount) {
+  const newDiceRolls = []
+  for (let i = 0; i < diceCount; i += 1) {
+    newDiceRolls.push(Math.floor(Math.random() * 6) + 1)
+  }
+  console.log(newDiceRolls)
+}
+getDiceRollArray(3)
+
 const hero = {
   elementId: 'hero',
   name:'Wizard' ,
