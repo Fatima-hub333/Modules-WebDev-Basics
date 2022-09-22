@@ -1,31 +1,34 @@
-// const animalForRelease1 = {
-//   name: 'Tilly',
-//   species: 'tiger',
-//   weightKg: 56,
-//   age: 2,
-//   dateOfRelease: '03-02-2022'
-// }
-// const animalForRelease2 = {
-//   name: 'Nelly',
-//   species: 'elephant',
-//   weightKg: 320,
-//   age: 16,
-//   dateOfRelease: '03-02-2022'
-// }
+const animalForRelease1 = {
+  name: 'Tilly',
+  species: 'tiger',
+  weightKg: 56,
+  age: 2,
+  dateOfRelease: '03-02-2022'
+}
+const animalForRelease2 = {
+  name: 'Nelly',
+  species: 'elephant',
+  weightKg: 320,
+  age: 16,
+  dateOfRelease: '03-02-2022'
+}
 
-// function Animal(data) {
-//   this.name = data.name
-//   this.species = data.species
-//   this.weightKg = data.weightKg
-//   this.age = data.age
-//   this.dateOfRelease = data.dateOfRelease
-// }
+function Animal(data) {
+  this.name = data.name
+  this.species = data.species
+  this.weightKg = data.weightKg
+  this.age = data.age
+  this.dateOfRelease = data.dateOfRelease
+  this.summariseAnimal = function () {
+    console.log(`${this.name} is a ${this.age} year old ${this.species} which weighs ${this.weightKg}kg and was released into the wild on ${this.dateOfRelease}`)
+  }
+}
 
-// const tillytheTiger = new Animal(animalForRelease1)
-// const nellytheElephant = new Animal(animalForRelease2)
+const tillytheTiger = new Animal(animalForRelease1)
+const nellytheElephant = new Animal(animalForRelease2)
 
-// console.log(tillytheTiger)
-// console.log(nellytheElephant)
+tillytheTiger.summariseAnimal()
+nellytheElephant.summariseAnimal()
 
 const hotel1 = {
 	name: 'Safari View',
