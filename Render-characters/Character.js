@@ -13,13 +13,13 @@ function Character(data) {
           }).join("")
   }
   
-  this.takeDamage = function(attackScoreArray){
-
-  const totalAttackScore = attackScoreArray.reduce(function(total, num){
-      return total + num
-  })
+this.takeDamage = function(attackScoreArray){
+  const totalAttackScore = attackScoreArray.reduce(function(total, num){return total + num})
   this.health -= totalAttackScore
+  if (this.health <= 0) {
+    this.health = 0
   }
+}
   
   this.getCharacterHtml = function () {
       const { elementId, name, avatar, health, diceCount } = this;
