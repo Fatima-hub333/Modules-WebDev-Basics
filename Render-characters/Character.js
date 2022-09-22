@@ -1,6 +1,4 @@
-  import { getDiceRollArray, getDicePlaceholderHtml } from './utils.js'
-
-  const getPercentage = (remainingHealth, maximumHealth) => (100 * remainingHealth) / maximumHealth
+  import { getDiceRollArray, getDicePlaceholderHtml, getPercentage } from './utils.js'
 
   function Character(data) {
   Object.assign(this, data)
@@ -22,24 +20,6 @@
       this.health = 0
   }
   }
-
-  /*
-  CHALLENGE
-  1. Instead of just logging the percent, getHealthBarHtml 
-  needs to return this string of html:
-  `<div class="health-bar-outer">
-  <div class="health-bar-inner *YOUR CODE HERE* " 
-  style="width: *YOUR CODE HERE* %;">
-  </div>
-  </div>`
-  2. You need to make some changes to that string of HTML.
-  2a. If the amount of health left is 25% or lower, add the class 
-  "danger" to the div with the class "health-bar-inner".
-  2b. The width of that div should be the % health remaining. 
-  3. Be sure to add the healthBar variable to the string of HTML
-  rendered by getCharacterHtml.
-  **hint.md for help!!**       
-  */
 
   this.getHealthBarHtml = function () {
   const percent = getPercentage(this.health, this.maxHealth)
