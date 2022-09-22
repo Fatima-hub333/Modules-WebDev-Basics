@@ -35,12 +35,16 @@ this.takeDamage = function(attackScoreArray){
       this.dead = true  
       this.health = 0
   }
-  console.log(getPercentage(this.health, this.maxHealth)) 
-}
+  }
+  
+  this.HealthBarHtml = function () {
+    const percent = getPercentage(this.health, this.maxHealth)
+    console.log(percent)
+  }
 
 this.getCharacterHtml = function () {
   const { elementId, name, avatar, health, diceCount } = this;
-
+  const healthBar = this.HealthBarHtml()
   return `
       <div class="character-card">
           <h4 class="name"> ${name} </h4>
