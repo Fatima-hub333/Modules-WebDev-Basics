@@ -24,6 +24,8 @@ function Animal(data) {
   }
 }
 
+// ======================
+
 const tillytheTiger = new Animal(animalForRelease1)
 const nellytheElephant = new Animal(animalForRelease2)
 
@@ -58,8 +60,53 @@ function NationalParkHotels(data) {
   }
 }
 
+// ===================
+
 const hotelSafari = new NationalParkHotels(hotel1)
 const hotelLeopard = new NationalParkHotels(hotel2)
 
 hotelSafari.summariseHotel()
 hotelLeopard.summariseHotel()
+
+const studentDetails = {
+  firstName: 'janaka',
+  lastName: 'siriwardena',
+  age: 28,
+  country: 'sri lanka',
+  email: 'j.siri@totalinternet.com',
+  discordUsername: 'JS1',
+} 
+
+function Student(data) {
+  Object.assign(this, data)
+  this.summariseStudent = function () {
+      console.log(`${this.firstName} ${this.lastName} is ${this.age} years old and comes from ${this.country}. Their email is ${this.email} and you can find them on discord as ${this.discordUsername}`)
+  }
+}
+
+const newStudent = new Student(studentDetails)
+newStudent.summariseStudent()
+
+// ====================
+const sandraKayeProfileData = {
+	name: 'Sandra Kaye',
+	portfolio: 'www.sandrasportfolio.com',
+	currentJob: 'Google',
+	currentSalary: '400k'	
+}
+
+/*
+Challenge
+1. Use Object.assign to cut 4 lines of code from the constructor function.
+*/
+
+
+function DevProfile(data){
+  Object.assign(this, data)
+	this.summariseDev = function(){
+	console.log(`${this.name}'s porfolio is at ${this.portfolio} and they work at ${this.currentJob}. Their current salary is ${this.currentSalary}.`)
+}
+}
+
+const sandraKaye = new DevProfile(sandraKayeProfileData)
+sandraKaye.summariseDev()
