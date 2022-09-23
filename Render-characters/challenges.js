@@ -110,3 +110,47 @@ function DevProfile(data){
 
 const sandraKaye = new DevProfile(sandraKayeProfileData)
 sandraKaye.summariseDev()
+
+// Classes
+
+class Module{
+  constructor() {
+    this.courseName = "Learn JS"
+    this.studentsEnrolled = 5600
+    this.studentsCompleted = 5100
+  }
+}
+
+const learnJS = new Module
+console.log(learnJS.studentsCompleted)
+
+const moduleStats = {
+  module1: {
+    moduleName: 'Learn JS',
+    studentsEnrolled: 2340,
+    studentsCompleted: 2210
+  },
+  module2: {
+    moduleName: 'CSS Basics',
+    studentsEnrolled: 1893,
+    studentsCompleted: 1810
+  },
+  module3: {
+    moduleName: 'Responsive Design',
+    studentsEnrolled: 4600,
+    studentsCompleted: 4357
+  }
+}
+
+class Module {
+  constructor(data) {
+    Object.assign(this, data)
+    this.percentCompletedModule = this.studentsCompleted /this.studentsEnrolled * 100
+  }
+  logPercentCompletedModule() {
+    console.log(this.percentCompletedModule)
+  }
+}
+
+const responsiveDesign = new Module(moduleStats.module3)
+responsiveDesign.logPercentCompletedModule()

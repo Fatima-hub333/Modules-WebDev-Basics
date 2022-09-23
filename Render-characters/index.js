@@ -32,7 +32,7 @@ if(!isWaiting){
       else{
           endGame()
       }
-  }    
+  }
 }
 }
 
@@ -45,14 +45,14 @@ const endMessage = wizard.health === 0 && monster.health === 0 ?
 
 const endEmoji = wizard.health > 0 ? "🔮" : "☠️"
   setTimeout(()=>{
-      document.body.innerHTML = `
-          <div class="end-game">
-              <h2>Game Over</h2> 
-              <h3>${endMessage}</h3>
-              <p class="end-emoji">${endEmoji}</p>
-          </div>
-          `
-  }, 1500)
+    document.body.innerHTML = `
+      <div class="end-game">
+          <h2>Game Over</h2>
+          <h3>${endMessage}</h3>
+          <p class="end-emoji">${endEmoji}</p>
+      </div>
+      `
+}, 1500)
 }
 
 document.getElementById("attack-button").addEventListener('click', attack)
