@@ -18,5 +18,9 @@ nav {
 }
 
 #blog-list {
-  padding: 90px 30px 30px;
+  padding: 50px 30px 30px;
+}
+
+form {
+  padding: 90px 10px 10px;
 }
