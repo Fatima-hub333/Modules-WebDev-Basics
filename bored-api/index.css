@@ -17,3 +17,7 @@ button {
   border: 1px solid darkred;
   cursor: pointer;
 }
+
+.fun {
+  background: linear-gradient(to left, #f7b733, #fc4a1a)
+}
