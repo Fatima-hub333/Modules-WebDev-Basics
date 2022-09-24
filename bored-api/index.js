@@ -1,5 +1,5 @@
-fetch("https://dog.ceo/api/breeds/image/random")
+fetch("https://www.boredapi.com/api/activity")
   .then(response => response.json())
-  .then(data => {
-    document.getElementById("image-container").innerHTML = ` <img src="${data.message}" />`
+    .then(data => {
+    document.getElementById("activity-name"). textContent = data.activity
   })
