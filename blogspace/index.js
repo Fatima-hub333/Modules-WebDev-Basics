@@ -1,8 +1,6 @@
-fetch("https://apis.scrimba.com/jsonplaceholder/posts")
-  .then(response => response.json())
-  .then(data => {
-    const postsArray = data.slice(0, 5)
-    let html = ""
+let postsArray = []
+function renderPosts() {
+  let html = ""
     for (let post of postsArray) {
       html += `
         <h3>${post.title}</h3>
@@ -11,6 +9,13 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
         `
     }
     document.getElementById("blog-list").innerHTML = html
+}
+
+fetch("https://apis.scrimba.com/jsonplaceholder/posts")
+  .then(response => response.json())
+  .then(data => {
+    postsArray = data.slice(0, 5)
+    renderPosts()
   })
 
 document.getElementById("new-post").addEventListener("submit", function (e) {
@@ -31,5 +36,8 @@ document.getElementById("new-post").addEventListener("submit", function (e) {
   }
   fetch("https://apis.scrimba.com/jsonplaceholder/posts", options)
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(post => {
+      postsArray.unshift(post)
+      renderPosts()
+    })
 })
