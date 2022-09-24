@@ -29,6 +29,11 @@ form {
   margin: 0 auto;
 }
 
+input,
+textarea {
+  padding: 6px;
+}
+
 input#post-title,
 textarea#post-body {
   margin-bottom: 10px;
