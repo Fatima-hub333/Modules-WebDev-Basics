@@ -23,4 +23,20 @@ nav {
 
 form {
   padding: 90px 10px 10px;
+  display: grid;
+  background-color: lightblue;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+input#post-title,
+textarea#post-body {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 10px;
+  cursor: pointer;
+  
 }
