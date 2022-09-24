@@ -70,3 +70,13 @@ Share my project updates with my team in a whatsapp chat
 DELETE:
 I delete message which I sent to my friend on whatsapp
 <!-- Methids quiz end -->
+
+fetch("https://apis.scrimba.com/jsonplaceholder/todos", {
+  method: "POST",
+  body: JSON.stringify({
+    title: "Buy Milk",
+    complete: false
+  })
+})
+   .then(response => response.JSON)
+   .then(data => console.log(data))
