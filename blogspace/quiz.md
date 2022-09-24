@@ -72,11 +72,11 @@ I delete message which I sent to my friend on whatsapp
 <!-- Methids quiz end -->
 
 fetch("https://apis.scrimba.com/jsonplaceholder/todos", {
-  method: "POST",
-  body: JSON.stringify({
-    title: "Buy Milk",
-    complete: false
-  })
+    method: "POST",
+    body: JSON.stringify({
+        title: "Buy Milk",
+        completed: false
+    })
 })
-   .then(response => response.JSON)
-   .then(data => console.log(data))
+    .then(res => res.json())
+    .then(data => console.log(data))
