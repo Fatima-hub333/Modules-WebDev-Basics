@@ -14,5 +14,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
 
 fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
   .then(res => res.json())
-  .then(data => console.log(data))
+  .then(data => {
+    console.log(data)
+  })
   .catch(err => console.error(err))
