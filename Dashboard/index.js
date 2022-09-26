@@ -1,6 +1,7 @@
 const author = document.getElementById("author")
 const crypto = document.getElementById("crypto")
 const cryptoTop = document.getElementById("crypto-top")
+const time = document.getElementById("time")
 
 fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature")
   .then(response => response.json())
@@ -34,5 +35,9 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
   })
   .catch(err => console.error(err))
 
-const date = new Date()
-console.log(date.toLocaleTimeString("en-us", {timeStyle: "short"}))
+function getCurrentTime() {
+  const date = new Date()
+time.textContent = date.toLocaleTimeString("en-us", { timeStyle: "short" })
+}
+
+setInterval(getCurrentTime, 1000)
