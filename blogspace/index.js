@@ -49,3 +49,7 @@
 //       // form.reset()
 //     })
 // })
+
+fetch("https://apis.scrimba.com/openweathermap/data/2.5/weather?q=salt lake+city&units=imperial")
+  .then(res => res.json())
+  .then(data => console.log(data))

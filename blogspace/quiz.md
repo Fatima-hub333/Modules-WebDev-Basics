@@ -145,3 +145,23 @@ Variable inside the URL that acts as a placeholder for the real value.
 fetch("https://apis.scrimba.com/jsonplaceholder/posts/2/comments")
   .then(res => res.json())
   .then(data => console.log(data))
+
+<!-- Query Strings -->
+Allow us to filter the results to get back./ A way to filter results. i.e
+/bikes?type=mountain - this is the query stribg of Url.
+
+<!-- Quiz -->
+At Mike's Bikes, they also sell bike racks (endpoint is /bikeracks).
+
+What would you expect the endpoints to be for the following tasks:
+
+1. Get a list of all bike racks sold on the site?
+/bikeracks
+
+2. Get a list of all bike racks available in the physical store right now?
+   (Assume a query called "available" that is a boolean true/false)
+/bikeracks?available=true
+
+3. Get a list of all "Thule"-brand bike racks that can hold 4 bikes?
+   (Assume there are "brand" and "numBikes" queries)
+/bikeracks?brand=thule&numBikes=4
