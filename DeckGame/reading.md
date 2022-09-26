@@ -86,3 +86,19 @@ fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
   .then(data => console.log(data))
   .then(callback)
 
+fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
+  .then(function (res) {
+    return "Hello"
+  })
+  .then(function (whatever) {
+    console.log(whatever)
+    return "World"
+  })
+  .then(function (testing) {
+    console.log(testing)
+    return "Testing"
+  })
+  .then(function (another) {
+    console.log(another)
+    return "Blah"
+  })
