@@ -54,3 +54,35 @@ const peopleWithPets = filterArray(people, person => person.hasPet)
 console.log(peopleWithPets)
 
 <!-- Promises -->
+Promises are in one of 3 tates at any given time
+- pending
+- Fulfilled
+- Rejected
+
+<!-- Chainning Methods -->
+const voters = [
+  {name: "Joe", email: "joe@joe.com", voted: true},
+  {name: "Jane", email: "jane@jane.com", voted: true},
+  {name: "Bo", email: "bo@bo.com", voted: false},
+  {name: "Bane", email: "bane@bane.com", voted: false}
+]
+
+const finalResult = voters.filter(voter => voter.voted).map(voter => voter.email)
+console.log(finalResult)
+
+const promise = fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
+// const promise2 = promise.then(response => response.json())
+promise.then(response => response.json())
+console.log(promise)
+// .then(data => console.log(data))
+
+/**
+ * Mini challenge: Figure out what `promise.then()` returns! 
+ * Save the result to a variable and log it to the console.
+ */
+
+fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .then(callback)
+
