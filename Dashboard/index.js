@@ -33,3 +33,6 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
     `
   })
   .catch(err => console.error(err))
+
+const date = new Date()
+console.log(date.toLocaleTimeString("en-us", {timeStyle: "short"}))
