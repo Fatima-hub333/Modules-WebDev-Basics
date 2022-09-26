@@ -37,7 +37,7 @@ div.card-slot {
 }
 
 div.card-slot:nth-of-type(1){
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .cards {
@@ -65,4 +65,11 @@ p {
 
 button:disabled {
   cursor: not-allowed;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #d62828;
+  font-weight: bold;
 }

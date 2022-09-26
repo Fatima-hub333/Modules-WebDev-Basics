@@ -1,9 +1,14 @@
 let deckId
+let computerScore = 0
+let myScore = 0
+
 const cardsContainer = document.getElementById("cards")
 const newDeckBtn = document.getElementById("new-deck")
 const drawCardBtn = document.getElementById("draw-cards")
 const header = document.getElementById("header")
 const remainingText = document.getElementById("remaining")
+const computerScoreEl = document.getElementById("computer-score")
+const myScoreEl = document.getElementById("my-score")
 
 function handleClick() {
     fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
@@ -54,10 +59,14 @@ function determineCardWinner(card1, card2) {
     const card1ValueIndex = valueOptions.indexOf(card1.value)
     const card2ValueIndex = valueOptions.indexOf(card2.value)
     
-    if (card1ValueIndex > card2ValueIndex) {
-        return "Card 1 wins!"
-    } else if (card1ValueIndex < card2ValueIndex) {
-        return "Card 2 wins!"
+  if (card1ValueIndex > card2ValueIndex) {
+    computerScore++
+    computerScoreEl.textContent = `Computer score: ${computerScore}`
+      return "Computer wins!"
+  } else if (card1ValueIndex < card2ValueIndex) {
+    myScore++
+    myScoreEl.textContent = `Your Score: ${myScore}`
+      return "You wins!"
     } else {
         return "War!"
     }
