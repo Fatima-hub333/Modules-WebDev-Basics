@@ -11,3 +11,8 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
   .catch(error => {
     document.body.style.backgroundImage = `url(https://images.unsplash.com/photo-1492724724894-7464c27d0ceb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjQyMDYyMDg&ixlib=rb-1.2.1&q=80&w=1080)`
   })
+
+fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err))
