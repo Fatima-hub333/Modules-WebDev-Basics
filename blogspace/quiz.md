@@ -165,3 +165,16 @@ What would you expect the endpoints to be for the following tasks:
 3. Get a list of all "Thule"-brand bike racks that can hold 4 bikes?
    (Assume there are "brand" and "numBikes" queries)
 /bikeracks?brand=thule&numBikes=4
+
+
+
+<!-- Asynchornous Javascript -->
+**Synchronous JavaScript**: means that each command must complete before the next command can execute. So, no two commands can be running at the same time as each other. E.g for loops, console.log(), variable declaration, just about everything else in javaScript.
+
+**Asynchronous JavaScript**
+Code that can run 'out of order'. Allows a lengthy operation to start, but finish at a later time without blocking other code from running in the meantime.
+JS is not truly a 'asynchornous, but rather has "callback" mechanisms in place to run commands in a different order to make things more efficient.
+
+- Callback Functions
+- Promises
+- Async/Await
