@@ -102,3 +102,9 @@ fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
     console.log(another)
     return "Blah"
   })
+
+  <!-- Async & Await -->
+  introduced in ECMAScript 2017 (A.K.A ES8)
+  Make asynchronous code appear to be synchronous
+  Async goes before the function
+  Await goes before a method/function that returns a promise
