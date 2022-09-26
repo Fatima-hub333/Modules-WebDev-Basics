@@ -4,9 +4,10 @@ function handleClick() {
     .then(data => console.log(data))
 }
 
-
-
-
 document.getElementById("new-deck").addEventListener("click", handleClick)
 
 // Functions are firs-class object in JavaScript
+function callBack() {
+  console.log("I finally ran")
+}
+setTimeout(callBack, 2000)
