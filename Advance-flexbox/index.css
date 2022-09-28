@@ -1,3 +1,5 @@
+body {}
+
 .card {
   width: 90%;
   margin: 0 auto;
@@ -10,20 +12,18 @@
 
 .card-img {
   object-fit: cover;
-  height: 150px;
+  flex-basis: 250px;
+  min-height: 0;
+  min-width: 0;
 }
 
 .card-content {
-  padding: 1rem;
+  padding: 1em;
 }
 
-/* ================
-Typography
-=================== */
 .card-title,
 .card-read-time,
-.card-btn,
-.card-body {
+.card-btn {
   font-family: 'Blinker', sans-serif;
 }
 
@@ -35,6 +35,7 @@ Typography
 
 .card-body {
   font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.6;
 }
 
@@ -42,11 +43,12 @@ Typography
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: 3em;
 }
 
 .card-btn {
   font-size: 1.25rem;
-  background-color: #05cbe9;
+  background: #05cbe9;
   color: #111d4a;
   text-decoration: none;
   font-weight: 700;
@@ -56,7 +58,40 @@ Typography
 
 .card-read-time {
   margin: 0;
+  opacity: .6;
+  line-height: 1;
 }
 
+.card-read-time span {
+  font-weight: 700;
+  display: block;
+  font-size: 1.25em;
+}
 
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+  }
 
+  .card-img{
+    height: 300px;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-title {
+    font-size: 2.25rem;
+  }
+
+  .card-body {
+    font-size: 1.125rem;
+    max-width: 500px;
+  }
+
+  .card-footer {
+    margin-top: auto;
+  }
+}
