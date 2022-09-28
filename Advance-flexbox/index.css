@@ -1,0 +1,27 @@
+.card {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* ================
+Typography
+=================== */
+.card-title,
+.card-read-time,
+.card-btn {
+  font-family: 'Blinker', sans-serif;
+}
+
+.card-title {
+  color: #05cbe9;
+  font-size: 1.75rem;
+}
+
+.card-body {
+  font-size: 1rem;
+}
+
+.card-btn {
+  font-size: 1.25rem;
+}
