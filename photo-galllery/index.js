@@ -1,6 +1,7 @@
 async function getUser() {
   let response = await fetch("https://jsonplaceholder.typicode.com/users/3")
   let user = await response.json()
+  console.log(JSON.stringify(user))
   return user
 }
 
