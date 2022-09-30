@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.board {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
+}
+
+.board * {
+  border: 0.1rem solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.my-category-title {
+  background-color: lightblue;
+  grid-row-start: 1;
+  text-transform: uppercase;
+}
+
+.my-category-clue {
+  font-size: 2rem;
+}
