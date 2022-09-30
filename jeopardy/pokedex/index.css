@@ -1,0 +1,28 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.a-pokemon {
+  display: grid;
+  grid-template-columns: repeat(12, calc(100% / 12));
+}
+
+.a-pokemon * {
+  border: 0.1rem solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-pokemon-id {
+  background-color: lightblue;
+  grid-column: span 2;
+}
+
+.a-pokemon-name {
+  background-color: lightyellow;
+  grid-column: span 5;
+  font-size: 1.3rem;
+}
