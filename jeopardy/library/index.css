@@ -6,11 +6,14 @@ html, body {
 }
 
 .my-library {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, calc(100% / 3));
 }
 
 .my-book {
   display: grid;
-  grid-template-columns: 1rem 9rem;
+  grid-template-columns: 1rem 8rem;
   grid-template-areas: 
       "spine cover"
       "footer footer";
@@ -26,7 +29,6 @@ html, body {
   background-color: lightgreen;
   text-align: center;
   padding: 1rem;
-  font-size: 1.3rem;
 }
 
 .my-book-spine {

@@ -17,8 +17,12 @@ function getBookHtml(book) {
   </div>`
 }
 
-getBooks().then(books => {
+function displayLibrary(books) {
   document.body.innerHTML = `<div class="my-library">
     ${books.map(getBookHtml).join('')}
   </div>`
-})
+}
+
+getBooks()
+  .then(displayLibrary)
+  .catch(e => console.log(e))
