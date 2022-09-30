@@ -1,10 +1,15 @@
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
+  background-color: lightgreen;
+}
+
+.my-pokedex {
+  padding: 0.5rem;
 }
 
 .a-pokemon {
+  margin: 0.3rem;
   display: grid;
   grid-template-columns: repeat(12, calc(100% / 12));
 }
@@ -14,15 +19,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 0.3rem;
 }
 
 .a-pokemon-id {
   background-color: lightblue;
   grid-column: span 2;
+  font-size: 1.3rem;
 }
 
 .a-pokemon-name {
-  background-color: lightyellow;
   grid-column: span 5;
+  background-color: lightyellow;
+  font-size: 1.3rem;
+}
+
+.a-pokemon-type {
+  grid-column: span 5;
+  font-size: 1.3rem;
+}
+
+.a-pokemon-stat {
+  background-color: lightpink;
+  grid-column: span 3;
+}
+
+.a-pokemon-alt-name {
+  background-color: lightseagreen;
+  grid-column: span 4;
   font-size: 1.3rem;
 }
